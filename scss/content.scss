@@ -1,0 +1,21 @@
+.content {
+   &__container {
+   }
+
+   &__body {
+      display: grid;
+      grid-template-columns: 150px 1fr 150px;
+      & > div {
+         grid-column-start: 2;
+         grid-column-end: 3;
+         margin-bottom: 250px;
+      }
+   }
+
+   &__holiday {
+   }
+
+   &__people {
+      flex-direction: row-reverse;
+   }
+}

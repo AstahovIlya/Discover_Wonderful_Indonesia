@@ -1,82 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+   <meta charset="UTF-8">
+   <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+   <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/fonts-style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+   <script src="./js/index.js" defer></script>
 </head>
+
 <body>
-		<!-- Начало: Данный блок удалять нельзя -->
-		<style>
-			.maketforfigma{
-				flex: 0 0 auto;
-				/*background: #303b44;*/
-				/*background: #5CDB95;*/
-				background: #313a46;
-				font-weight: bold;
-				display: flex;
-			}
-			.maketforfigma img{
-				border-radius: 10px;
-				margin: 4px 0 0 4px;
-			}
-			.maketforfigma p {
-				/*color: #fff;*/
-				/*color: #05386B;*/
-				color: #98a6ad;
-				text-decoration: none;
-				letter-spacing: .01875rem;
-				font-size: .775rem;
-				padding: 0 10px;
-				line-height: 0.70rem;
-			}
+   <!-- Начало: Данный блок удалять нельзя -->
+   <style>
+      .maketforfigma {
+         flex: 0 0 auto;
+         /*background: #303b44;*/
+         /*background: #5CDB95;*/
+         background: #313a46;
+         font-weight: bold;
+         display: flex;
+      }
 
-			.maketforfigma p > a {
-				/*color: #08ff00;*/
-				/*color: #EDF5E1;*/
-				color: #bbe4f0;
-				font-weight: bold;
-			}
-			.maketforfigma p > a:hover {
-				/*color: #ffa001*/
-				/*color: #379683*/
-				color: #ffffff
-			}
+      .maketforfigma img {
+         border-radius: 10px;
+         margin: 4px 0 0 4px;
+      }
 
-			.main{
-				flex: 1 0 auto;
-			}
+      .maketforfigma p {
+         /*color: #fff;*/
+         /*color: #05386B;*/
+         color: #98a6ad;
+         text-decoration: none;
+         letter-spacing: .01875rem;
+         font-size: .775rem;
+         padding: 0 10px;
+         line-height: 0.70rem;
+      }
 
-			html{
-				height: 100%;
-			}
+      .maketforfigma p>a {
+         /*color: #08ff00;*/
+         /*color: #EDF5E1;*/
+         color: #bbe4f0;
+         font-weight: bold;
+      }
 
-			body{
-				display: flex;
-				flex-direction: column;
-				height: 100%;
-				padding: 0;
-				margin: 0;
-			}
-		</style>
-		<div class="maketforfigma">
-			<a href="https://t.me/s/FigmaToHTML" target="_blank">
-				<img src="logo.png">
-			</a>
-			<div>
-				<p>
-					Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML/2" target="_blank">FIGMA | Макеты для верстки</a>
-				</p>
-				<p>
-					При помощи бота <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">FIGMA | 💵 Верстай за деньги</a> пользователь получил оплату за верстку этого сайта и попал в рейтинги сайта
-					<a href="https://maketforfigma.ru" target="_blank">FIGMA — Макеты для верстки</a>
-				</p>
-			</div>
-		</div>
-		<!-- Конец -->
+      .maketforfigma p>a:hover {
+         /*color: #ffa001*/
+         /*color: #379683*/
+         color: #ffffff
+      }
 
-		<div class="main">
-			В данном блоке размещается верстка
-		</div>
+      .main {
+         flex: 1 0 auto;
+      }
+
+      html {
+         height: 100%;
+      }
+
+      body {
+         display: flex;
+         flex-direction: column;
+         height: 100%;
+         padding: 0;
+         margin: 0;
+      }
+   </style>
+   <div class="maketforfigma">
+      <a href="https://t.me/s/FigmaToHTML" target="_blank">
+         <img src="logo.png">
+      </a>
+      <div>
+         <p>
+            Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a
+               href="https://t.me/s/FigmaToHTML/2" target="_blank">FIGMA | Макеты для верстки</a>
+         </p>
+         <p>
+            При помощи бота <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">FIGMA | 💵 Верстай за
+               деньги</a> пользователь получил оплату за верстку этого сайта и попал в рейтинги сайта
+            <a href="https://maketforfigma.ru" target="_blank">FIGMA — Макеты для верстки</a>
+         </p>
+      </div>
+   </div>
+   <!-- Конец -->
+
+   <div class="main">
+      <header class="header">
+         <div class="header__container">
+            <div class="header__body">
+               <div class="header__logo logo">QWERy</div>
+               <div class="header__menu menu">
+                  <button type="button" class="menu__icon icon-menu"><span></span></button>
+                  <nav class="menu__body">
+                     <ul class="menu__list">
+                        <li class="menu__item"><a href="" class="menu__link">Information</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">About us</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Culture</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="header__search search">
+                  <button type="button" class="search__icon _icon-search"></button>
+                  <input type="text" class="search__input" placeholder="Search">
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="home">
+         <div class="home__container">
+            <div class="home__body">
+               <div class="home__follows follows">
+                  <p class="follows__text">Follow us</p>
+                  <div class="follows__icon _icon-instagram"></div>
+                  <div class="follows__icon _icon-twitter"></div>
+                  <div class="follows__icon _icon-facebook"></div>
+               </div>
+               <div class="home__text">
+                  <div class="home__sub-title sub-title">explore the Nature Beauty</div>
+                  <h1 class="home__title"><span>Discover</span><br>
+                     Wonderful Indonesia</h1>
+                  <a href="#" class="home__button _icon-scroll_down">Scroll down</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="content">
+         <div class="content__container">
+            <div class="content__body">
+               <div class="content__holiday holiday content-block">
+                  <div class="holiday__img content-block__img">
+                     <img src="./img/holiday/1.png" alt="img">
+                  </div>
+                  <div class="holiday__body content-block__body">
+                     <div class="holiday__sub-title sub-title">EAST nUSA TENGGARA</div>
+                     <div class="holiday__title title">Have you enjoyed your holiday?</div>
+                     <div class="holiday__text content-block__text">You will be amazed if you take part in this sailing
+                        Komodo island tour package. So it is also mandatory for you, besides
+                        enjoying Komodo tourism on Komodo Island, you also have to taste the marine tourism. The
+                        beautiful waters of Komodo will
+                        make you meet many travelers from other countries.</div>
+                     <a href="#" class="holiday__button content-block__button _icon-read_more">read more</a>
+                  </div>
+               </div>
+               <!-- Оболочка слайдера -->
+               <div class="content__slider swiper">
+                  <!-- Двигающееся часть слайдера -->
+                  <div class="content__wrapper swiper-wrapper">
+                     <!-- Слайды -->
+                     <div class="content__slide swiper-slide">
+                        <img src="./img/slider/2.png" alt="slide-img">
+                        <div class="swiper-slide__body">
+                           <div class="swiper-slide__sub-title"><span>Bromo</span></div>
+                           <div class="swiper-slide__title">Steady your steps, we will climb together!</div>
+                           <div class="swiper-slide__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing
+                              the splendor of Mount Semeru that soars into the sky, and
+                              gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim
+                              twilight from the Bromo ridge is an
+                              unforgettable experience when visiting Bromo.</div>
+                           <a href="#" class="swiper-slide__button content-block__button _icon-read_more">read more</a>
+                        </div>
+                     </div>
+                     <div class="content__slide swiper-slide">
+                        <img src="./img/slider/2.png" alt="slide-img">
+                        <div class="swiper-slide__body">
+                           <div class="swiper-slide__sub-title"><span>New sub-title</span></div>
+                           <div class="swiper-slide__title">New title</div>
+                           <div class="swiper-slide__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                              Tempora, officia aliquam dolorum repellat sint voluptates, ea nihil ex sed harum qui
+                              commodi sequi asperiores nam recusandae itaque eos placeat cum?</div>
+                           <a href="#" class="swiper-slide__button content-block__button _icon-read_more">read more</a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Если нужна навигация (влево/вправо) -->
+                  <div class="swiper-left _icon-arrow_left"></div>
+                  <div class="swiper-right _icon-arrow_right"></div>
+               </div>
+               <div class="content__people people content-block">
+                  <div class="people__img content-block__img">
+                     <img src="./img/people/3.png" alt="img">
+                  </div>
+                  <div class="people__body content-block__body">
+                     <div class="people__sub-title sub-title">INDONESIAN CULTURE</div>
+                     <div class="people__title title">Our culture here is very friendly to people</div>
+                     <div class="people__text content-block__text">known for his politeness, manners and gentleness.
+                        This becomes a characteristic when they mingle with other tribes and
+                        become basic traits that are passed down by their ancestors.</div>
+                     <a href="#" class="people__button content-block__button _icon-read_more"><span>read
+                           more</span></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__row">
+               <div class="footer__ready ready">
+                  <div class="ready__logo">QWERy</div>
+                  <div class="ready__button">
+                     <p class="ready__text">Ready to explore?</p>
+                     <button type="button" class="ready__btn">Get started</button>
+                  </div>
+               </div>
+               <div class="footer__menu">
+                  <div class="footer__form form">
+                     <div class="form__title">Let's go on vacation, Make your day</div>
+                     <div class="form__email">
+                        <input placeholder="Email address" class="form__input"></input>
+                        <button class="form__button _icon-arrow_right"></button>
+                     </div>
+                  </div>
+                  <div class="footer__navigation navigation">
+                     <div class="navigation__column">
+                        <div class="navigation__title">Services</div>
+                        <ul class="navigation__list">
+                           <li class="navigation__item"><a href="#">Email Marketing</a></li>
+                           <li class="navigation__item"><a href="#">Campaigns</a></li>
+                           <li class="navigation__item"><a href="#">Branding</a></li>
+                           <li class="navigation__item"><a href="#">Offline</a></li>
+                        </ul>
+                     </div>
+                     <div class="navigation__column">
+                        <div class="navigation__title">About</div>
+                        <ul class="navigation__list">
+                           <li class="navigation__item"><a href="#">Our Story</a></li>
+                           <li class="navigation__item"><a href="#">Benefits</a></li>
+                           <li class="navigation__item"><a href="#">Team</a></li>
+                           <li class="navigation__item"><a href="#">Careers</a></li>
+                        </ul>
+                     </div>
+                     <div class="navigation__column">
+                        <div class="navigation__title">Help</div>
+                        <ul class="navigation__list">
+                           <li class="navigation__item"><a href="#">FAQs</a></li>
+                           <li class="navigation__item"><a href="#">Contact Us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer__social social">
+                  <div class="social__rules">
+                     <a href="#" class="social__terms">Terms & Conditions</a>
+                     <a href="#" class="social__privacy">Privacy Policy</a>
+                  </div>
+                  <div class="social__icons">
+                     <a href="#" class="social__icon _icon-facebook"></a>
+                     <a href="#" class="social__icon _icon-twitter"></a>
+                     <a href="#" class="social__icon _icon-instagram"></a>
+                  </div>
+               </div>
+               <div class="footer__copyright">
+                  <p>Copyright 2021 QWERy</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
 </body>
+
 </html>

@@ -1,0 +1,137 @@
+.home {
+   padding: 287px 0 859px 0;
+   margin-top: -160px;
+   background-image: url("../img/main/bg.png");
+   position: relative;
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 76%;
+      background: linear-gradient(330.24deg, rgba(0, 0, 0, 0) 31.06%, #000000 108.93%);
+   }
+   &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 32%;
+      background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 77.78%);
+   }
+   &__container {
+   }
+
+   &__body {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 150px 1fr 150px;
+   }
+
+   &__follows {
+      align-self: center;
+      justify-self: start;
+   }
+
+   &__text {
+      align-self: center;
+      justify-self: center;
+   }
+
+   &__sub-title {
+      margin-bottom: 32px;
+   }
+
+   &__title {
+      font-weight: 400;
+      font-size: 88px;
+      line-height: 114%;
+      margin-bottom: 125px;
+      span {
+         font-weight: 700;
+         font-size: 96px;
+         line-height: 104%;
+         text-transform: capitalize;
+      }
+   }
+
+   &__button {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 72%;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      transition: color 0.3s ease;
+
+      &::before {
+         margin-left: 9px;
+         animation: scroll 0.9s linear infinite;
+      }
+
+      &:hover {
+         color: #ffc178;
+      }
+   }
+}
+.follows {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   & *:not(:last-child) {
+      margin-bottom: 20px;
+   }
+   &__text {
+      writing-mode: vertical-rl;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 72%;
+   }
+   &__icon {
+      font-size: 24px;
+      transition: color 0.3s ease;
+      cursor: pointer;
+      &:hover {
+         color: #ffc178;
+      }
+   }
+}
+.sub-title {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 139%;
+   letter-spacing: 6px;
+   text-transform: uppercase;
+   color: #ffc178;
+   display: flex;
+   align-items: center;
+
+   &::before {
+      content: "";
+      width: 72px;
+      height: 2px;
+      background: #ffc178;
+      margin-right: 32px;
+   }
+}
+
+@keyframes scroll {
+   0% {
+      transform: translateY(0);
+   }
+
+   50% {
+      transform: translateY(-2px);
+   }
+
+   100% {
+      transform: translateY(3px);
+   }
+}

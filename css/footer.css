@@ -1,0 +1,218 @@
+.footer {
+  margin-bottom: 118px;
+}
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__row > div {
+  width: 100%;
+}
+.footer__ready {
+  padding: 12px 0 43px 0;
+  margin-bottom: 55px;
+}
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 96px;
+  margin-bottom: 130px;
+}
+.footer__social {
+  margin-bottom: 156px;
+  padding: 0 40px;
+}
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__copyright p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 178%;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.ready {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.ready::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.38px;
+  background-color: #fff;
+  opacity: 0.3;
+}
+.ready__logo {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 135%;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
+.ready__button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.ready__text {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 132%;
+  letter-spacing: -0.3px;
+}
+.ready__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa343;
+  border-radius: 8px;
+  min-height: 69px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 129%;
+  color: #000000;
+  padding: 0 70px;
+  margin-left: 55px;
+  transition: color 0.3s ease;
+}
+.ready__btn:hover {
+  background-color: #fff;
+}
+
+.form {
+  max-width: 400px;
+}
+.form__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 136%;
+  letter-spacing: -0.3px;
+  margin-bottom: 50px;
+}
+.form__email {
+  display: flex;
+  align-items: center;
+}
+.form__input {
+  background-color: initial;
+  border-bottom: 1.38px solid rgba(255, 255, 255, 0.1921568627);
+  min-height: 69px;
+  flex: 0 0 83%;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 14px;
+}
+.form__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 126%;
+  letter-spacing: -0.204545px;
+  opacity: 0.5;
+}
+.form__input::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 126%;
+  letter-spacing: -0.204545px;
+  opacity: 0.5;
+}
+.form__button {
+  background-color: #ffa343;
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 69px;
+  color: #000000;
+  font-size: 13px;
+  padding: 0 30px;
+  transition: background-color 0.3s ease;
+}
+.form__button:hover {
+  background-color: #fff;
+}
+
+.navigation {
+  display: flex;
+  align-items: flex-start;
+  gap: 184px;
+}
+.navigation__column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 45px;
+}
+.navigation__title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.231818px;
+  color: #ffd1a0;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 45px;
+}
+.navigation__item {
+  font-weight: 400;
+  font-size: 19px;
+  letter-spacing: -0.204545px;
+  transition: all 0.3s ease;
+}
+.navigation__item:hover {
+  text-decoration: underline;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social__rules {
+  display: flex;
+  align-items: center;
+}
+.social__rules > a {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.204545px;
+  transition: color 0.3s ease;
+}
+.social__rules > a:hover {
+  color: #ffa343;
+}
+.social__privacy {
+  margin-left: 87px;
+}
+.social__icons {
+  display: flex;
+  gap: 51px;
+  align-items: center;
+}
+.social__icon {
+  font-size: 27px;
+  transition: all 0.3s ease;
+}
+.social__icon:hover {
+  color: #ffa343;
+}
